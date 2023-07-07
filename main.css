@@ -1,0 +1,92 @@
+body {
+  /* background-image: url("background.jpg"); */
+  margin: 200px;
+  
+}
+body.wetter{
+  margin: 0;
+  
+}
+.searchBox {
+  width: 100%;
+  max-width: 280px;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  background-color: rgba(241, 241, 241, 0.3);
+  border-radius: 16px 0px 16px 0px;
+  border-bottom: 3px solid #0c8db4;
+  color: #000000;
+  font-size: 20px;
+  font-weight: 300;
+  transition: 0.2s ease-out;
+}
+.searchBtn {
+  background: #00c0f0;
+  color: rgb(255, 255, 255);
+  position: relative;
+  height: 50px;
+
+  font-size: 1.6em;
+  padding: 0 2em;
+  cursor: pointer;
+  transition: 800ms ease all;
+  outline: none;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  background-color: rgb(81, 87, 90);
+}
+
+.flex-container {
+  display: flex;
+  align-items: flex-start;
+  align-content: space-between;
+  background-color: rgb(54, 187, 13);
+}
+
+.center {
+  display: flex;
+  background-color: firebrick;
+
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.grid-container {
+  display: grid;
+  grid-auto-rows: minmax(80px, auto);
+  grid-template-areas:
+    "city city"
+    "temp humi"
+    "temp  country"
+    "temp country";
+
+  gap: 20px;
+}
+.city {
+  background-color: blueviolet;
+  grid-area: city;
+  border-radius: 10px;
+}
+.grid-container .city{
+  border-radius: 200px;
+  background-color: yellow;
+}
+.temp {
+  background-color: #0c8db4;
+  grid-area: temp;
+}
+.humi {
+  background-color: aquamarine;
+  grid-area: humi;
+}
+.country {
+  background-color: coral;
+  grid-area: country;
+}
